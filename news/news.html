@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>News ans Events - Kings College Budo</title>
+        <link rel="icon" type="image/x-icon" href="./icons/favicon-16x16.png">
+        <link href="news.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li id="homep"><a href="../home/index.html" class="nothover"><img src="./icons/home.jpg" alt="Home icon"></a></li>
+                    <li><a href="../about us/about.html" target="_self">About Us</a></li>
+                    <li><a href="../academics/Academics.html" target="_self" >Academics</a></li>
+                    <li><a class="active">News and Events</a></li>
+                    <li><a href="../assignment/galllery.html">Gallery</a></li>
+                    <li><a href="../contact us/website.html" >Contact Us</a></li>
+                </ul>
+    
+            </nav>
+            <h1>THE BUDO GALLERY</h1>
+    
+        </header>
+
+        <div class="container1">
+            <div class="notification hide" id="notification"></div>
+            <section id="news-section" class="recent-news">
+                <h1>News Section</h1>
+                <div class="news-container">
+                    <div class="news-list">
+                        <h2>Latest News</h2>
+                        <div class="search-filter">
+                            <input type="text" id="newsSearch" placeholder="Search news...">
+                            <select id="categoryFilter">
+                                <option value="all">All Categories</option>
+                                <option value="academic">Academic</option>
+                                <option value="sports">Sports</option>
+                                <option value="culture">Culture</option>
+                                <option value="events">Events</option>
+                            </select>
+                        </div>
+                        <ul id="news"></ul>
+                    </div>
+                    <div class="news-desc">
+                        <h1>News Description</h1>
+                        <img alt="news image" id="image_description" src="" />
+                        <p id="description">Click on a news heading to view</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container2">
+            <h1>Events</h1>
+            <section id="events-section" class="event-calendar">
+                <div class="calendar">
+                    <h1>Event calendar</h1>
+                    <button id="prevMonth">&leftarrow;</button>
+                    <h2 id="monthYear"></h2>
+                    <button id="nextMonth">&rightarrow;</button>
+                    <div class="days"></div>
+                </div>
+                <div id="dateModal">
+                    <button id="close">&times;</button>
+                    <h3 id="dateText"></h3>
+                    <p id="event"></p>
+                </div>
+                <div class="news-form">
+                    <form id="newForm">
+                        <input name="title" placeholder="News/Events Title" required type="text" />
+                        <div class="image-upload">
+                            <input accept="image/*" id="imageInput" name="image" type="file" />
+                            <label class="image-preview" for="imageInput">
+                                <img alt="Image Preview" id="preview" src="#" style="display: none" />
+                                <span>Click to upload image</span>
+                            </label>
+                        </div>
+                        <textarea cols="10" name="description" placeholder="Description" required rows="5"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <div class="modal-overlay" id="modalOverlay" style="display: none;"></div>
+
+        <footer>
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="../home/index.html" target="_self">Home</a></li>
+                    <li><a href="../about us/about.html" target="_self">About Us</a></li>
+                    <li><a href="../academics/Academics.html" target="_self">Academics</a></li>
+                    <li><a href="../assignment/galllery.html" target="_self">Gallery</a></li>
+                    <li><a href="../contact us/website.html" target="_self">Contact Us</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kingscollegebudo/?locale=pt_PT"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://twitter.com/TheBudoLeague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/explore/locations/270042705/kings-college-budo/"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2025 King's College Budo. All rights reserved.</p>
+        </footer>
+
+
+        <!-- Scripts -->
+        <script src="newsList.js"></script>
+        <script src="news.js"></script>
+        <script src="calendar.js"></script>
+    </body>
+
+</html>

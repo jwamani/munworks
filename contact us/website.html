@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kings Collge Budo</title>
+    <link rel="icon" type="image/x-icon" href="pics/favicon-16x16.png">
+    <link rel="stylesheet" href="websitestyles.css">
+    <script src="websitejavascript.js" defer></script></head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="homep"><a href="../home/index.html" class="nothover"><img src="./pics/home.jpg" alt="Home icon"></a></li>
+                <li><a href="../about us/about.html" target="_self">About Us</a></li>
+                <li><a href="../academics/Academics.html" target="_self" >Academics</a></li>
+                <li><a href="../news/news.html" target="_self">News and Events</a></li>
+                <li><a href="../assignment/galllery.html" target="_self">Gallery</a></li>
+                <li><a class="active" >Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
+    <main>
+        <div class="maindiv">
+            <div class="div1">
+                <div id="ph">
+                    <img src="pics/phone.jpg" alt="phone number" id="tel">
+                    <strong>Phone Number</strong>
+                    <p>+256 705 357993</p>
+                </div>
+                <div id="em">
+                    <img src="pics/mail.jpg" alt="email" id="mail">
+                    <strong>E-mail</strong>
+                    <p>info@powerPuffgirls.com</p>
+                </div>
+                <div id="lo">
+                    <img src="pics/location.jpg" alt="location" id="location">
+                    <strong>Location</strong>
+                    <p>7F5P+9X8, Kampala</p>
+                    <small>Tap for more info</small>
+                </div>
+                <div id="wo">
+                    <img src="pics/time.jpg" alt="work hours" id="hours">
+                    <strong>Work hours</strong>
+                    <p>Monday to Friday</p>
+                    <p>9:00am to 5:00pm</p>
+                </div>
+                
+            </div>
+            <div class="div2 container">
+                <details id="detailsSection">
+                    <summary>Tap Here To Contact Us</summary>
+                    <form class="form-grid" method="post">
+                        <input type="text" name="fname" id="fname" placeholder="First Name" maxlength="15" required> 
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" maxlength="15" required> 
+                        <input type="tel" name="mobile" id="mobile" placeholder="Mobile No." pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required> 
+                        <input type="email" name="email" id="email" placeholder="E-mail" required> 
+                        <textarea name="message" id="message" placeholder="Enter Message" maxlength="150"></textarea>                    
+                    </form>
+                    <button onclick="sendEmail()" id="submit">Submit</button>
+                </details>
+                <div class="iframe-container" id="iframeContainer">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.777738766959!2d32.484871373103424!3d0.2584198641155182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177da27933c679b7%3A0xd97fe43c0e3ac1d0!2sKings%20College%20Budo!5e0!3m2!1sen!2sug!4v1743208320749!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal" id="emailModal">
+            <p>Your message has been sent!</p>
+            <button class="close-btn" onclick="closeModal()">OK</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="../home/index.html" target="_self">Home</a></li>
+                <li><a href="../about us/about.html" target="_self">About Us</a></li>
+                <li><a href="../academics/Academics.html" target="_self">Academics</a></li>
+                <li><a href="../news/news.html" target="_self">News and Events</a></li>
+                <li><a href="../assignment/galllery.html" target="_self">Gallery</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/kingscollegebudo/?locale=pt_PT"><i class="bx bxl-facebook"></i></a>
+                <a href="https://twitter.com/TheBudoLeague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/explore/locations/270042705/kings-college-budo/"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2025 King's College Budo. All rights reserved.</p>
+    </footer>
+ 
+    
+</body>
+</html>
